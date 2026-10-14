@@ -1,0 +1,10 @@
+{
+  "model": "Cross-Attention Fusion",
+  "test_accuracy": 0.6052631578947368,
+  "test_auc": 0.7354166666666667,
+  "test_f1": 0.6938775510204082,
+  "test_precision": 0.8947368421052632,
+  "test_recall": 0.5666666666666667,
+  "best_val_auc": 0.8166666666666667,
+  "best_epoch": 10
+}
