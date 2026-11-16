@@ -1,0 +1,12 @@
+{
+  "python": "3.12.10",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "torch": "2.15.0+cu132",
+  "torchvision": "0.29.2+cu132",
+  "sklearn": "1.9.0",
+  "numpy": "2.5.0",
+  "pandas": "2.3.3",
+  "cuda": "13.2",
+  "seed": 42,
+  "gpu": "NVIDIA GeForce RTX 4060"
+}

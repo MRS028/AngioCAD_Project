@@ -1,0 +1,6 @@
+subgroup,n,CAD,no CAD,AUC [95% CI],sensitivity,specificity
+Diagnosis: SA,25,14,11,"0.851 [0.656, 0.981]",0.714,0.727
+Diagnosis: STEMI,41,39,2,n/a,0.974,0.0
+Diagnosis: UA,10,7,3,n/a,0.429,0.667
+Sex: Female,25,14,11,"0.851 [0.682, 0.974]",0.786,0.636
+Sex: Male,51,46,5,"0.752 [0.409, 1.000]",0.87,0.6

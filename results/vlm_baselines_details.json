@@ -1,0 +1,275 @@
+{
+  "environment": {
+    "python": "3.14.4",
+    "torch": "2.11.0+cu128",
+    "cuda": "12.8",
+    "gpu": "NVIDIA GeForce RTX 4060",
+    "seed": 42,
+    "frames_per_patient": 4,
+    "split": "test",
+    "prompt_style": "default",
+    "run_mode": "both",
+    "transformers": "5.22.2",
+    "bitsandbytes": "0.50.2",
+    "accelerate": "1.15.0"
+  },
+  "label_definition": {
+    "positive_class": "CAD present",
+    "negative_class": "CAD absent",
+    "threshold": "at least one coronary segment graded 51-75% stenosis or worse",
+    "note": "Dataset-defined angiographic label from banded segment grades; not a functional-ischemia or revascularization indication."
+  },
+  "prompt": "You are analyzing a coronary angiography image for research purposes. Determine whether there is significant coronary artery stenosis, defined as more than 50 percent diameter narrowing in a major coronary artery. Answer with exactly one word: yes or no. Do not infer disease from image quality or missing anatomy.",
+  "n_patients": 76,
+  "patients_without_frames": [],
+  "n_answered_by_both": 76,
+  "qwen": {
+    "all": {
+      "n_total": 76,
+      "n_valid": 76,
+      "n_invalid": 0,
+      "coverage": 1.0,
+      "accuracy": 0.25,
+      "auc": 0.3072916666666667,
+      "sensitivity": 0.1,
+      "specificity": 0.8125,
+      "precision": 0.6666666666666666,
+      "npv": 0.19402985074626866,
+      "f1": 0.17391304347826086,
+      "balanced_accuracy": 0.45625,
+      "mcc": -0.11040405212838957,
+      "tp": 6,
+      "tn": 13,
+      "fp": 3,
+      "fn": 54
+    },
+    "common_valid": {
+      "n_total": 76,
+      "n_valid": 76,
+      "n_invalid": 0,
+      "coverage": 1.0,
+      "accuracy": 0.25,
+      "auc": 0.3072916666666667,
+      "sensitivity": 0.1,
+      "specificity": 0.8125,
+      "precision": 0.6666666666666666,
+      "npv": 0.19402985074626866,
+      "f1": 0.17391304347826086,
+      "balanced_accuracy": 0.45625,
+      "mcc": -0.11040405212838957,
+      "tp": 6,
+      "tn": 13,
+      "fp": 3,
+      "fn": 54
+    },
+    "ci_common_valid": {
+      "accuracy": {
+        "point": 0.25,
+        "lower": 0.18421052631578946,
+        "upper": 0.32894736842105265
+      },
+      "sensitivity": {
+        "point": 0.1,
+        "lower": 0.03333333333333333,
+        "upper": 0.18333333333333332
+      },
+      "specificity": {
+        "point": 0.8125,
+        "lower": 0.625,
+        "upper": 1.0
+      },
+      "f1": {
+        "point": 0.17391304347826086,
+        "lower": 0.05970149253731343,
+        "upper": 0.3013698630136986
+      },
+      "balanced_accuracy": {
+        "point": 0.45625,
+        "lower": 0.3458333333333333,
+        "upper": 0.55
+      },
+      "mcc": {
+        "point": -0.11040405212838957,
+        "lower": -0.3837056775034177,
+        "upper": 0.13703774196550633
+      },
+      "auc": {
+        "point": 0.3072916666666667,
+        "lower": 0.17184895833333333,
+        "upper": 0.46145833333333336
+      }
+    },
+    "ci_all": {
+      "accuracy": {
+        "point": 0.25,
+        "lower": 0.18421052631578946,
+        "upper": 0.32894736842105265
+      },
+      "sensitivity": {
+        "point": 0.1,
+        "lower": 0.03333333333333333,
+        "upper": 0.18333333333333332
+      },
+      "specificity": {
+        "point": 0.8125,
+        "lower": 0.625,
+        "upper": 1.0
+      },
+      "f1": {
+        "point": 0.17391304347826086,
+        "lower": 0.05970149253731343,
+        "upper": 0.3013698630136986
+      },
+      "balanced_accuracy": {
+        "point": 0.45625,
+        "lower": 0.3458333333333333,
+        "upper": 0.55
+      },
+      "mcc": {
+        "point": -0.11040405212838957,
+        "lower": -0.3837056775034177,
+        "upper": 0.13703774196550633
+      },
+      "auc": {
+        "point": 0.3072916666666667,
+        "lower": 0.17184895833333333,
+        "upper": 0.46145833333333336
+      }
+    },
+    "peak_vram_gb": 6.117613315582275,
+    "runtime_seconds": 622.0385150909424
+  },
+  "internvl": {
+    "all": {
+      "n_total": 76,
+      "n_valid": 76,
+      "n_invalid": 0,
+      "coverage": 1.0,
+      "accuracy": 0.7105263157894737,
+      "auc": 0.5,
+      "sensitivity": 0.8833333333333333,
+      "specificity": 0.0625,
+      "precision": 0.7794117647058824,
+      "npv": 0.125,
+      "f1": 0.828125,
+      "balanced_accuracy": 0.47291666666666665,
+      "mcc": -0.07195620945013274,
+      "tp": 53,
+      "tn": 1,
+      "fp": 15,
+      "fn": 7
+    },
+    "common_valid": {
+      "n_total": 76,
+      "n_valid": 76,
+      "n_invalid": 0,
+      "coverage": 1.0,
+      "accuracy": 0.7105263157894737,
+      "auc": 0.5,
+      "sensitivity": 0.8833333333333333,
+      "specificity": 0.0625,
+      "precision": 0.7794117647058824,
+      "npv": 0.125,
+      "f1": 0.828125,
+      "balanced_accuracy": 0.47291666666666665,
+      "mcc": -0.07195620945013274,
+      "tp": 53,
+      "tn": 1,
+      "fp": 15,
+      "fn": 7
+    },
+    "ci_common_valid": {
+      "accuracy": {
+        "point": 0.7105263157894737,
+        "lower": 0.6447368421052632,
+        "upper": 0.7763157894736842
+      },
+      "sensitivity": {
+        "point": 0.8833333333333333,
+        "lower": 0.8,
+        "upper": 0.95
+      },
+      "specificity": {
+        "point": 0.0625,
+        "lower": 0.0,
+        "upper": 0.1875
+      },
+      "f1": {
+        "point": 0.828125,
+        "lower": 0.7804878048780488,
+        "upper": 0.8702290076335878
+      },
+      "balanced_accuracy": {
+        "point": 0.47291666666666665,
+        "lower": 0.4083333333333333,
+        "upper": 0.5520833333333333
+      },
+      "mcc": {
+        "point": -0.07195620945013274,
+        "lower": -0.21243400181751776,
+        "upper": 0.1383773258656399
+      },
+      "auc": {
+        "point": 0.5,
+        "lower": 0.344765625,
+        "upper": 0.6583333333333333
+      }
+    },
+    "ci_all": {
+      "accuracy": {
+        "point": 0.7105263157894737,
+        "lower": 0.6447368421052632,
+        "upper": 0.7763157894736842
+      },
+      "sensitivity": {
+        "point": 0.8833333333333333,
+        "lower": 0.8,
+        "upper": 0.95
+      },
+      "specificity": {
+        "point": 0.0625,
+        "lower": 0.0,
+        "upper": 0.1875
+      },
+      "f1": {
+        "point": 0.828125,
+        "lower": 0.7804878048780488,
+        "upper": 0.8702290076335878
+      },
+      "balanced_accuracy": {
+        "point": 0.47291666666666665,
+        "lower": 0.4083333333333333,
+        "upper": 0.5520833333333333
+      },
+      "mcc": {
+        "point": -0.07195620945013274,
+        "lower": -0.21243400181751776,
+        "upper": 0.1383773258656399
+      },
+      "auc": {
+        "point": 0.5,
+        "lower": 0.344765625,
+        "upper": 0.6583333333333333
+      }
+    },
+    "peak_vram_gb": 5.576336860656738,
+    "runtime_seconds": 134.6817343235016
+  },
+  "mcnemar_common_valid": {
+    "a_only_correct": 13,
+    "b_only_correct": 48,
+    "n_discordant": 61,
+    "p_value": 7.665168380445453e-06,
+    "model_a": "Qwen3-VL-8B",
+    "model_b": "InternVL3-8B"
+  },
+  "notes": [
+    "All metrics are at patient level.",
+    "4 frames per patient from the middle of different series; both models see the same frames.",
+    "Patient answer: majority of frame answers, ties broken by the mean yes/no score.",
+    "A patient with no usable answer is an abstention and is excluded, not scored as negative.",
+    "AUC uses the relative yes/no score of the first generated token; it is not a calibrated probability.",
+    "Bootstrap: 2000 resamples of patients within each class.",
+    "Models are loaded with 4-bit NF4 quantisation (8 GB GPU); full-precision results may differ."
+  ]
+}

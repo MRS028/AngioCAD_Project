@@ -1,0 +1,5 @@
+Model,n_total,n_valid,n_invalid,coverage,accuracy,auc,sensitivity,specificity,precision,npv,f1,balanced_accuracy,mcc,tp,tn,fp,fn
+"Qwen3-VL-8B (all patients, abstentions excluded)",76,76,0,1.000000,0.250000,0.307292,0.100000,0.812500,0.666667,0.194030,0.173913,0.456250,-0.110404,6,13,3,54
+"InternVL3-8B (all patients, abstentions excluded)",76,76,0,1.000000,0.710526,0.500000,0.883333,0.062500,0.779412,0.125000,0.828125,0.472917,-0.071956,53,1,15,7
+Qwen3-VL-8B (answered by both (primary)),76,76,0,1.000000,0.250000,0.307292,0.100000,0.812500,0.666667,0.194030,0.173913,0.456250,-0.110404,6,13,3,54
+InternVL3-8B (answered by both (primary)),76,76,0,1.000000,0.710526,0.500000,0.883333,0.062500,0.779412,0.125000,0.828125,0.472917,-0.071956,53,1,15,7
