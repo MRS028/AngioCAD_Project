@@ -398,8 +398,22 @@ The exact versions of each run are saved to `results/environment.json` and `resu
 
 ---
 
-## Citation and data access
+## Citation, data and license
 
-*To be completed by the authors:* the source and access conditions of the AngioCAD dataset, the ethics approval or waiver, the licence of this code, and the citation for the accompanying paper.
+**Citing this work.** A manuscript is in preparation. Until it is available, please cite the repository:
 
-This code is a research tool. It has not been validated for clinical use.
+```bibtex
+@misc{angiocad_benchmark,
+  title  = {AngioCAD: How Much Do Multimodal Fusion and Vision-Language Models Add to
+            Coronary Artery Disease Detection?},
+  author = {MRS028},
+  year   = {2026},
+  url    = {https://github.com/MRS028/AngioCAD_Project}
+}
+```
+
+**Data.** The patient data are not distributed with this repository. *[Add the source of the AngioCAD dataset, its citation, the ethics approval and the conditions of access here.]*
+
+**License.** *[No license file is present yet. Add one before making the repository public; without it, others have no right to reuse the code.]*
+
+**Third-party models.** ResNet-18 (torchvision, ImageNet weights), CLIP ViT-B/32 (`openai/clip-vit-base-patch32`), Qwen3-VL-8B-Instruct (`Qwen/Qwen3-VL-8B-Instruct`) and InternVL3-8B-Instruct (`OpenGVLab/InternVL3-8B-Instruct`) are used under their respective licenses.
